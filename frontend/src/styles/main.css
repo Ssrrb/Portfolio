@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1f2530;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    min-height: 100vh;
+    /* or 80vh, etc. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.name-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    /* accent color */
+}
+
+.highlight {
+    color: #ff6b6b;
+    /* or a similar accent color */
+}
+
+.contact-button {
+    background-color: transparent;
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
