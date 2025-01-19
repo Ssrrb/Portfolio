@@ -11,11 +11,11 @@ function About() {
                 Tengo 2 años de experiencia desarrollando software y 1 año en IA.
             </p>
             <p className="description">
-                Tranaje en diferente posiciones, a lo largo de este tiempo pero mi objetivo siempre ha sido el mismo:
-                to bridge the gap between <span className="highlight">algoritmos</span> &
+                Trabaje en diferente posiciones, a lo largo de este tiempo pero mi objetivo siempre ha sido el mismo:
+                Establecer la intersección entre <span className="highlight">algoritmos</span> y las
                 <span className="highlight"> personas</span>.
             </p>
-            <button className="contact-button">Contact me!</button>
+            <button className="contact-button">Contactame!</button>
         </section>
     );
 }

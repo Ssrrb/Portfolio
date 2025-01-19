@@ -50,3 +50,47 @@ html {
     background-color: #ff6b6b;
     color: #fff;
 }
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1f2530;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    margin-left: 250px;
+  }
+  
+  .header-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-container {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-container {
+    padding: 1rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  

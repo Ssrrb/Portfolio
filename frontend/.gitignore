@@ -51,3 +51,10 @@ media/
 # macOS
 .DS_Store
 
+# Node.js
+node_modules/
+.cache/
+dist/
+*.log
+*.lock
+

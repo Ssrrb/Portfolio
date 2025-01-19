@@ -1,16 +1,23 @@
 import React from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Footer from './components/Footer';
+import Header from './components/Header.js';
+import About from './components/About.js';
+import Footer from './components/Footer.js';
+import Sidebar from './components/Sidebar.js';
+
 
 function App() {
   return (
-    <div>
-      <Header />
-      <About />
-      <Footer />
+    <div className="app-container">
+      <Sidebar />
+      <main className="main-content">
+        <Header />
+        <About />
+        <Footer />
+      </main>
     </div>
   );
 }
 
 export default App;
+
+
