@@ -12,7 +12,7 @@ function About() {
             </p>
             <p className="description">
                 Trabaje en diferente posiciones, a lo largo de este tiempo pero mi objetivo siempre ha sido el mismo:
-                Establecer la intersección entre <span className="highlight">algoritmos</span> y las
+                Establecer la intersección entre <span className="highlight">algoritmos</span> y
                 <span className="highlight"> personas</span>.
             </p>
             <button className="contact-button">Contactame!</button>
