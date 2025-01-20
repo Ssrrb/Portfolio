@@ -5,7 +5,7 @@ function Header() {
         <section className="header-container">
             <div className="welcome-section">
                 <h1 className="name-title">Sebastian Rojas</h1>
-                <h2 className="subtitle">Software developer</h2>
+                <h2 className="subtitle">Software Engineer</h2>
             </div>
             {/* 
         Add a sidebar or icons for LinkedIn, YouTube, GitHub

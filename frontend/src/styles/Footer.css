@@ -1,16 +1,13 @@
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1f2530;
-    /* Same dark background */
-    padding: 1rem 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    /* Subtle divider */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    display: none;
+    /* Completely hides the footer */
 }
+
+.main-content {
+    margin-bottom: 0;
+    /* Remove any bottom margin that was compensating for footer */
+}
+
 
 .footer-social-icons {
     display: flex;

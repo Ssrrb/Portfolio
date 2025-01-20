@@ -4,48 +4,51 @@ import '../styles/Experience.css';
 const experienceData = [
   {
     id: 1,
-    title: "Software Engineer",
-    company: "Koyfin",
-    date: "May 2022 - Present",
+    title: 'Software Engineer',
+    company: 'Softshop S.A.',
+    date: 'Junio 2024 - Presente',
     responsibilities: [
-      "Built innovative functionality for a US Fintech leader",
-      "Collaborated with a 10+ member engineering team",
-      "Technologies: React, Node.js, TypeScript"
-    ]
+      'Diseño e implementación de arquitecturas basadas en IA para el análisis de imágenes y documentos para empresas grandes',
+      'Desarrollo de APIs RESTful y microservicios utilizando Flask, FastAPI y Django, mejorando la integración de sistemas externos.',
+      'Gestión avanzada de GCP, con despliegues a través de Docker y Kubernetes (GKE), reduciendo costos en un 25%.',
+    ],
   },
   {
     id: 2,
-    title: "Frontend Developer",
-    company: "Mercado Libre",
-    date: "Nov 2019 - May 2022",
+    title: 'Soporte Tecnico TI',
+    company: 'Softshop S.A.',
+    date: 'Nov 2023 - May 2024',
     responsibilities: [
-      "Developed robust frontend applications in Latin American Fintech",
-      "Collaborated with a 15+ member team",
-      "Technologies: React, Node.js, GraphQL"
-    ]
+      'Monitoreo de servidores y equipos mediante Datadog',
+      'Migraciones, backups y gestion de bases de datos para instituciones financieras.',
+      'Instalación, virtualización y configuración de entornos RHEL.',
+    ],
   },
   {
     id: 3,
-    title: "Frontend Lead",
-    company: "Buenos Aires City Government",
-    date: "Oct 2017 - Nov 2019",
+    title: 'Auxiliar Contable',
+    company: 'Mendoza & Asociados',
+    date: 'Nov 2021 - Feb 2022',
     responsibilities: [
-      "Led the frontend area in a government tech project",
-      "Worked with interdisciplinary teams",
-      "Created fast, user-friendly apps"
-    ]
-  }
+      'Registro de transacciones en Excel y Access',
+      'Manejo de documentación fiscal',
+      'Gestión de Análisis y reportes',
+    ],
+  },
 ];
 
 function Experience() {
   return (
     <section className="experience-container">
-      <h1 className="experience-title">
-        WORK EXPERIENCE
-        <span className="experience-subtitle">(So far)</span>
-      </h1>
+      <div className="experience-header">
+        <h1 className="experience-title">
+          Work Experience
+          <span className="experience-subtitle">(So far)</span>
+        </h1>
+        <div className="title-decoration"></div>
+      </div>
+
       <div className="experience-timeline">
-        <div className="timeline-label">EXPERIENCE</div>
         <div className="timeline-line"></div>
         {experienceData.map((exp, index) => (
           <div key={exp.id} className="timeline-item">
@@ -68,3 +71,4 @@ function Experience() {
 }
 
 export default Experience;
+

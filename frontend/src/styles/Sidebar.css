@@ -1,57 +1,85 @@
+/* Sidebar container */
 .sidebar {
   width: 250px;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1f2530;
+  /* A subtle gradient background for a more appealing look */
+  background: linear-gradient(135deg, #1f2530 0%, #2e3743 100%);
   color: #fff;
+  /* Add some padding around so the content isn't cramped */
   padding: 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+
+  /* Use flex to arrange items vertically and center them */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  /* horizontally center child elements */
   justify-content: space-between;
+  /* space out top (logo/nav) and bottom (icons) */
 }
 
-.sidebar nav ul {
+/* Logo container */
+.sidebar-logo {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  /* Optional to add some hover or other styling if you like */
+}
+
+/* Navigation styles */
+.sidebar-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar nav ul li {
-  margin: 1.5rem 0;
+.sidebar-nav ul li {
+  margin: 1.2rem 0;
 }
 
-.sidebar nav ul li a {
+.sidebar-nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  text-align: center;
+  /* center the text in each link */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.sidebar nav ul li a:hover {
+/* Hover effect for nav links */
+.sidebar-nav ul li a:hover {
   color: #ff6b6b;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Social icons container */
 .sidebar-icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
+/* Individual social icons */
 .sidebar-icons .icon {
   font-size: 1.5rem;
   color: #fff;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
+/* Hover effect for social icons */
 .sidebar-icons .icon:hover {
   color: #ff6b6b;
 }
