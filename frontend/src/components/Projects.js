@@ -38,11 +38,12 @@ const projectsData = [
   {
     id: 6,
     title: "Google Certification",
-    description: "Certified in Google Cloud Platform (GCP) with expertise in cloud architecture and services.",
+    description: "Google Certified Professional - Cloud Architect ",
     technologies: "GCP",
     github: "#",
     demo: "#",
-    isCertification: true
+    isCertification: true,
+    certificationUrl: "https://www.credly.com/badges/481045c7-3588-4e12-906f-e24610f71981/public_url"
   }
 ];
 
@@ -58,7 +59,14 @@ function Projects() {
           <div key={project.id} className={`project-card ${project.isCertification ? 'certification-card' : ''}`}>
             <div className="card-icons">
               {project.isCertification ? (
-                <FaCertificate className="icon certification-icon" />
+                <a
+                  href={project.certificationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View Google Cloud Certification"
+                >
+                  <FaCertificate className="icon certification-icon" />
+                </a>
               ) : (
                 <>
                   <a href={project.github} target="_blank" rel="noopener noreferrer">

@@ -45,17 +45,40 @@
 }
 
 .contact-button {
-    background: transparent;
-    border: 2px solid #ff6b6b;
-    /* Accent border */
+    /* Basic styling */
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    /* Colors and borders */
+    background-color: transparent;
     color: #ff6b6b;
-    padding: 0.7rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
+    border: 2px solid #ff6b6b;
+    border-radius: 4px;
+
+    /* Transitions */
     transition: all 0.3s ease;
+
+    /* Spacing */
+    margin-top: 2rem;
+
+    /* Optional: add a subtle shadow */
+    box-shadow: 0 2px 4px rgba(255, 107, 107, 0.1);
 }
 
 .contact-button:hover {
-    background: #ff6b6b;
+    /* Hover effects */
+    background-color: #ff6b6b;
     color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.2);
+}
+
+.contact-button:active {
+    /* Click effect */
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(255, 107, 107, 0.1);
 }

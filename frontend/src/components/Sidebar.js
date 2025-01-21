@@ -20,13 +20,13 @@ function Sidebar() {
       </nav>
 
       <div className="sidebar-icons">
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Ssrrb" target="_blank" rel="noopener noreferrer">
           <FaGithub className="icon" />
         </a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/sebastian-rojas-28674a303/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="icon" />
         </a>
-        <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://instagram.com/sebasrojasb" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="icon" />
         </a>
       </div>
