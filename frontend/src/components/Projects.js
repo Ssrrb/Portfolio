@@ -5,7 +5,7 @@ import '../styles/Projects.css';
 const projectsData = [
   {
     id: 1,
-    title: "Fintech Dashboard",
+    title: "Data Engineering1",
     description: "A comprehensive financial dashboard for real-time market analysis.",
     technologies: "React TypeScript Node.js",
     github: "#",
@@ -13,7 +13,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "E-Commerce Platform",
+    title: "Raw data to PostgresSQL",
     description: "A scalable e-commerce solution with integrated payment processing.",
     technologies: "Next.js GraphQL Stripe",
     github: "#",
@@ -21,9 +21,9 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "AI Chatbot",
-    description: "An intelligent chatbot for customer support automation.",
-    technologies: "Python TensorFlow Flask",
+    title: "Generala",
+    description: "Juego de Generala local escrito puramente en C",
+    technologies: "C",
     github: "#",
     demo: "#"
   },
@@ -36,26 +36,10 @@ const projectsData = [
     demo: "#"
   },
   {
-    id: 5,
-    title: "Task Management App",
-    description: "A collaborative task management tool for teams.",
-    technologies: "Vue.js Firebase",
-    github: "#",
-    demo: "#"
-  },
-  {
     id: 6,
-    title: "Data Visualization Tool",
-    description: "Interactive data visualization for business analytics.",
-    technologies: "D3.js Express MongoDB",
-    github: "#",
-    demo: "#"
-  },
-  {
-    id: 7,
-    title: "Google Cloud Certification",
+    title: "Google Certification",
     description: "Certified in Google Cloud Platform (GCP) with expertise in cloud architecture and services.",
-    technologies: "GCP Cloud Architecture Kubernetes",
+    technologies: "GCP",
     github: "#",
     demo: "#",
     isCertification: true
