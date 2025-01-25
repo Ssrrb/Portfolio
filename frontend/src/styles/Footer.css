@@ -1,46 +1,18 @@
 .footer-container {
-    display: none;
-    /* Completely hides the footer */
+    background-color: #1f2530;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
 }
 
-.main-content {
-    margin-bottom: 0;
-    /* Remove any bottom margin that was compensating for footer */
-}
-
-
-.footer-social-icons {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.footer-icon {
+.footer-content {
     color: #fff;
-    /* White icons */
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
-.footer-icon:hover {
-    color: #ff6b6b;
-    /* Accent color on hover */
-}
-
-.footer-toggle {
-    display: flex;
-    align-items: center;
-}
-
-.toggle-btn {
-    background: transparent;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.toggle-btn:hover {
-    color: #ff6b6b;
-    /* Accent color on hover */
+.footer-content:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }

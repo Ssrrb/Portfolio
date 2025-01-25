@@ -42,7 +42,7 @@ function Experience() {
     <section className="experience-container">
       <div className="experience-header">
         <h1 className="experience-title">
-          Work Experience
+           Experience
           <span className="experience-subtitle">(So far)</span>
         </h1>
         <div className="title-decoration"></div>
@@ -71,4 +71,3 @@ function Experience() {
 }
 
 export default Experience;
-

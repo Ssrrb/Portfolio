@@ -5,18 +5,18 @@ import '../styles/Projects.css';
 const projectsData = [
   {
     id: 1,
-    title: "Data Engineering1",
-    description: "A comprehensive financial dashboard for real-time market analysis.",
-    technologies: "React TypeScript Node.js",
-    github: "#",
+    title: "Portfolio Management App",
+    description: "Plataforma que ayuda a los usuarios a gestionar sus inversiones al agrupar datos financieros y visualizar el rendimiento de su portafolio.",
+    technologies: "Python (pandas, Plotly), FastAPI, SQLite/PostgreSQL.",
+    github: "https://github.com/Ssrrb/Portfolio-Management",
     demo: "#"
   },
   {
     id: 2,
-    title: "Raw data to PostgresSQL",
-    description: "A scalable e-commerce solution with integrated payment processing.",
-    technologies: "Next.js GraphQL Stripe",
-    github: "#",
+    title: "Supply-Chain-Tracking-with-Blockchain",
+    description: " Registra eventos de la supply chain (producción, envío, recepción) en una blockchain privada",
+    technologies: "Java, Blockchain",
+    github: "https://github.com/Ssrrb/Supply-Chain-Tracking-with-Blockchain",
     demo: "#"
   },
   {
@@ -31,8 +31,8 @@ const projectsData = [
     id: 4,
     title: "Portfolio Website",
     description: "A personal portfolio showcasing skills and projects.",
-    technologies: "React CSS Vite",
-    github: "#",
+    technologies: "React, CSS, Tailwind",
+    github: "https://github.com/Ssrrb/Portfolio",
     demo: "#"
   },
   {
@@ -52,7 +52,7 @@ function Projects() {
     <section className="projects-container">
       <div className="projects-header">
         <h1 className="projects-title">SOME PROJECTS</h1>
-        <p className="projects-subtitle">that I have been working on</p>
+        <p className="projects-subtitle">Proyectos destacados en los que trabajé recientemente</p>
       </div>
       <div className="projects-grid">
         {projectsData.map((project) => (

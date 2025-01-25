@@ -24,7 +24,6 @@ function About() {
     return (
         <section className="about-container">
             <h1 className="about-title">ABOUT ME</h1>
-            <p className="whoami">~: whoami</p>
             <p className="description">
                 Hola! Mi nombre es <span className="highlight">Sebastian</span>,
                 Construyo APIs, programas con IA, Bases de datos, pipelines, ademas estoy certificado por Google.

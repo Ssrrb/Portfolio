@@ -1,14 +1,13 @@
 # Build stage
 FROM node:18-alpine as build
 
-# Set working directory
 WORKDIR /app
 
 # Copy package files
-COPY package.json package-lock.json ./
+COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci
 
 # Copy source code
 COPY . .
@@ -19,14 +18,14 @@ RUN npm run build
 # Production stage
 FROM nginx:alpine
 
-# Copy built files from build stage
+# Adjust the default Nginx config to listen on port 8080 instead of 80
+RUN sed -i 's/listen\s\+80;/listen 8080;/' /etc/nginx/conf.d/default.conf
+
+# Copy built files from the build stage to Nginx
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Copy nginx config if you have custom configuration
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Expose port 8080 (helps documentation, but Cloud Run ignores EXPOSE at runtime)
+EXPOSE 8080
 
-# Expose port 80
-EXPOSE 80
-
-# Start nginx
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
